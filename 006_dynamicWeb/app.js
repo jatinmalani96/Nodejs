@@ -2,18 +2,25 @@ const express = require("express")
 const app = express()
 const PORT = 3000
 const path = require("path")
-const viewpath = path.join(__dirname,"./templetes/views")
+const hbs = require("hbs")
 
-app.set("view engone","hbs")
-app.set("views",viewpath)
+const indexPath = path.join(__dirname,"./temp/views")
+const paricalPath = path.join(__dirname,"./particial")
 
+app.set("view engine","hbs")
+app.set("views",indexPath)
+hbs.registerPartials(paricalPath)
+// app.use(express.static(paricalPath))
 
 app.get("/",(req,resp)=>{
-     resp.render("index")
+    // resp.send("WELCOME")
+    resp.render("index")
 })
 
+app.get("/forms",(req,resp)=>{
+    resp.render("forms")
+})
 
 app.listen(PORT,()=>{
-    console.log("server running on PORT : "+PORT);
+    console.log("server running on port :"+PORT);
 })
-
