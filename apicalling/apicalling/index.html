@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country</title>
+</head>
+<body onload="getcountry()">
+    <select name="country" id="country" onchange="getstate(value)">
+        <option value="0">---country---</option>
+    </select>
+        
+    <select name="state" id="state" onchange="getcity(value)">
+        <option value="0">---state---</option>
+    </select>
+
+    <select name="city" id="city">
+        <option value="0">---city---</option>
+    </select>
+
+    <script src="index.js"></script>
+    <h1>welcome</h1>
+</body>
+</html>
