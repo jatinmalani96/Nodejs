@@ -12,9 +12,27 @@
 </head>
 <body>
     {{>header}}
+
+    
   
 <section class="vh-100" style="background-color: #040404;">
   <div class="container py-5 h-100">
+
+
+<select name="country" id="country" onchange="getStates(value)" class="form-control">
+            <option value="0">---Select Country---</option>
+
+        </select><br>
+
+        <select name="state" id="state" onchange="getCities(value)" class="form-control">
+            <option value="0">---Select state---</option>
+        </select> <br>
+
+        <select name="city" id="city" class="form-control" onchange="getData(value)">
+            <option value="0">---Select city---</option>
+        </select>
+
+
 
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col-md-8 col-lg-6 col-xl-4">
@@ -29,7 +47,7 @@
             
             <div class="d-flex flex-column text-center mt-5 mb-4">
               <h6 class="display-4 mb-0 font-weight-bold" style="color: #1C2331;"> 13°C </h6>
-              <span class="small" style="color: #868B94">Stormy</span>
+              <span class="small" style="color: #868B94"  id="city">CITY: </span>
             </div>
 
             <div class="d-flex align-items-center">
