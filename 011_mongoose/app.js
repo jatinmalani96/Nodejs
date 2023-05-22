@@ -90,5 +90,5 @@ const deleteMany =()=>{
 // updataData()
 // updates()
 // deleteData()
-deleteMany()
+// deleteMany()
 
