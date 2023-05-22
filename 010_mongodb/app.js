@@ -79,6 +79,8 @@ mongoClint.connect(dburl).then(result=>{
      }).catch()
 
 
+     
+    mydb.collection("emploees")
 
 }).catch(err=>{
     console.log(err);
