@@ -3,9 +3,6 @@ const app = express()
 const mongoose = require("mongoose")
 const bcrypt = require("bcryptjs")
 const url = "mongodb+srv://jatin:jatin@cluster0.zui6fku.mongodb.net/Eshop?retryWrites=true&w=majority"
-const PORT = 3000
-app.use(express.json())
-
 mongoose.connect(url).then(result=>{
     console.log("successfull connected....");
 }).catch(err=>{
