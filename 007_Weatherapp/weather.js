@@ -8,7 +8,7 @@ const weatherdata = (lat,lon,callback)=>{
 
     axios.get(url).then(result=>{
         const dt = result.data.main
-    
+        // console.log(dt);
         const city = result.data.name
         const temp = dt.temp
         const pressure = dt.pressure

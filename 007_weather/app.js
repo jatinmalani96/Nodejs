@@ -6,7 +6,6 @@ const hbs = require("hbs")
 const weather = require("./util/weather")
 const geocode = require("./util/geocode")
 
-
 const viewPath= path.join(__dirname,"./templetes/views")
 
 const partialPath = path.join(__dirname,"./templetes/partials")

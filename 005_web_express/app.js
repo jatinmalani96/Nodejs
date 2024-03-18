@@ -14,12 +14,6 @@ app.get("/home",(req,resp)=>{
     resp.sendFile(home)
 })
 
-
-
-
-
-
-
 app.listen(PORT,()=>{
     console.log("server running on PORT :"+PORT);
 })

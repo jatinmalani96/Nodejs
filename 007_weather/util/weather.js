@@ -7,7 +7,7 @@ const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lo
 
 axios.get(url).then(result=>{
     const dt = result.data.main
-
+console.log(dt);
     const city = result.data.name
     const temp = dt.temp
     const pressure = dt.pressure
